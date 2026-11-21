@@ -75,7 +75,7 @@ h5 {
     line-height: 1.15;
     font-weight: 700;
 }
-
+/*
 h1 {
     font-size: 72px;
 }
@@ -95,7 +95,7 @@ h4 {
 h5 {
     font-size: 22px;
 }
-
+*/
 p {
     color: var(--gray);
     margin-bottom: 0;
@@ -391,8 +391,8 @@ p {
 .hero-content h1 {
     max-width: 700px;
 
-    font-family: 'Playfair Display', serif;
-    font-size: 62px !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px !important;
     font-weight: 800;
     line-height: 1.08;
     letter-spacing: -1px;
@@ -402,7 +402,6 @@ p {
 }
 
 .hero-content h1 span {
-    display: block;
     color: var(--secondary);
 }
 
@@ -428,7 +427,7 @@ p {
 .hero-content p {
     max-width: 650px;
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
 
     color: #102544;
@@ -490,7 +489,7 @@ p {
 }
 
 .hero-consultation-text h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.3;
@@ -501,7 +500,7 @@ p {
 }
 
 .hero-consultation-text p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
 
     color: #102544;
@@ -758,13 +757,20 @@ p {
     }
 
     .hero-content h1 {
-        font-size: clamp(30px, 8vw, 42px) !important;
+        font-size: 28px !important;
         line-height: 1.15;
         letter-spacing: -0.5px;
 
         margin-bottom: 20px;
     }
 
+    .hero-content h1 span{
+        font-size: 28px !important;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+
+        margin-bottom: 20px;
+    }
     .hero-title-line {
         display: block;
         width: 90px;
@@ -805,7 +811,7 @@ p {
     }
 
     .hero-consultation-text h2 {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 1.4;
 
         margin-bottom: 8px;
@@ -813,7 +819,7 @@ p {
     }
 
     .hero-consultation-text p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.6;
         color: #fff;
     }
@@ -948,14 +954,15 @@ p {
 }
 
 .feature-item .feature-subtitle {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
     color: var(--primary);
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 .feature-item p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     color: #707070;
 }
@@ -1018,7 +1025,7 @@ p {
 .btn-outline-custom {
     transition: all .35s ease;
 }
-
+/*
 
 
 @media (min-width:1600px) {
@@ -1074,7 +1081,7 @@ p {
     .feature-item {
         padding: 35px 20px;
     }
-}
+}*/
 
 @media (max-width:991px) {
     .navbar-custom {
@@ -1156,16 +1163,13 @@ p {
 }
 
 @media (max-width:768px) {
-    h1 {
-        font-size: 48px;
-    }
 
     .hero-section {
         padding: 140px 0 70px;
     }
 
     .hero-content h1 {
-        font-size: 44px !important;
+        font-size: 28px !important;
     }
 
     .hero-content p {
@@ -1198,6 +1202,14 @@ p {
         width: 64px;
         height: 64px;
         font-size: 26px;
+    }
+
+    .feature-item .feature-subtitle {
+        font-size: 18px !important;
+    }
+
+    .feature-item p {
+        font-size: 14px;
     }
 }
 
@@ -1260,14 +1272,6 @@ p {
 
     .feature-item {
         padding: 25px 15px;
-    }
-
-    .feature-item .feature-subtitle {
-        font-size: 16px;
-    }
-
-    .feature-item p {
-        font-size: 14px;
     }
 }
 
@@ -1352,7 +1356,7 @@ p {
 }
 
 .about-title {
-    font-size: 52px;
+    font-size: 46px;
     color: #132645;
     margin: 15px 0 25px;
     line-height: 1.2;
@@ -1369,6 +1373,7 @@ p {
     color: #666;
     line-height: 1.9;
     margin-bottom: 18px;
+    font-size: 16px;
 }
 
 .btn-about {
@@ -1392,25 +1397,6 @@ p {
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
-}
-
-@media (max-width:1199px) {
-    .about-section {
-        padding: 40px 0;
-    }
-
-    .about-title {
-        font-size: 44px;
-    }
-
-    .about-content {
-        max-height: 155px;
-    }
-
-    .about-content p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
 }
 
 @media (max-width:991px) {
@@ -1444,11 +1430,11 @@ p {
     }
 
     .about-label {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .about-title {
-        font-size: 34px;
+        font-size: 28px;
         line-height: 1.25;
         margin-bottom: 20px;
     }
@@ -1458,7 +1444,7 @@ p {
     }
 
     .about-content p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.8;
     }
 
@@ -1599,7 +1585,7 @@ p {
     justify-content: center;
     gap: 18px;
     background: #D9A441;
-    color: #111;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -1757,8 +1743,8 @@ p {
 
 .why-content .why-title {
     font-family: "Cormorant Garamond", serif;
-    font-size: 31px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
     line-height: 1.2;
     color: #132645;
     margin-bottom: 15px;
@@ -1888,20 +1874,19 @@ p {
 .choose-heading {
     margin-bottom: 24px;
     color: #132645;
-    font-size: 42px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
 }
 
 .choose-heading span {
-    display: block;
     margin-top: 5px;
     color: #C89B3C;
 }
 
 .choose-intro > .col-lg-7 > p {
     color: #4b5563;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     margin-bottom: 12px;
 }
@@ -1949,9 +1934,10 @@ p {
 .choose-feature-card .why-title {
     margin: 0 0 4px;
     color: #132645;
-    font-size: 22px;
+    font-size: 24px !important;
     line-height: 1.35;
     font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .choose-feature-card .why-content p:not(.why-title) {
@@ -1997,7 +1983,7 @@ p {
     }
 
     .choose-heading {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.25;
         text-align: center;
     }
@@ -2033,7 +2019,7 @@ p {
     }
 
     .choose-feature-card .why-title {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .choose-feature-card .why-content p:not(.why-title) {
@@ -2111,14 +2097,13 @@ p {
 .layanan-hero h1 {
     margin: 0;
     color: #10264b;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(38px, 4.5vw, 62px);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
 }
 
 .layanan-hero h1 strong {
-    display: block;
     margin-top: 6px;
     color: #c88d24;
     font-size: 1.15em;
@@ -2136,7 +2121,7 @@ p {
     max-width: 1020px;
     margin: 0 auto;
     color: #243754;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.65;
 }
 
@@ -2160,7 +2145,7 @@ p {
     }
 
     .layanan-hero h1 {
-        font-size: clamp(32px, 8vw, 44px);
+        font-size: 24px;
     }
 
     .layanan-hero__underline {
@@ -2194,12 +2179,12 @@ p {
 .legal-services-section {
     position: relative;
     overflow: hidden;
-    background-image:
-        linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)
-        ),
-        url("../images/background-biru-muda.png");
+    background:
+        radial-gradient(circle at top,
+            rgba(200, 138, 27, .10),
+            transparent 45%),
+        #fff;
+    padding: 90px 0;
 }
 
 .legal-services-section .container {
@@ -2240,11 +2225,11 @@ p {
 
 .section-title {
     margin-top: 20px;
-    font-size: clamp(34px, 4vw, 56px);
+    font-size: 48px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--primary);
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .section-title span {
@@ -2255,7 +2240,7 @@ p {
     max-width: 650px;
     margin: 25px auto 0;
     color: var(--muted);
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -2292,7 +2277,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: rgba(255, 242, 214, 0.15);
+    background: #fff;
     border: 1px solid var(--border);
     border-radius: 22px;
     padding: 30px;
@@ -2339,7 +2324,7 @@ p {
     flex: 1;
     margin: 0;
     color: var(--primary);
-    font-size: 1.8rem;
+    font-size: 24px;
     line-height: 1.35;
     font-family: Georgia, serif;
     font-weight: 700;
@@ -2388,7 +2373,7 @@ p {
     padding-left: 24px;
     color: #444;
     line-height: 1.7;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .service-card li::before {
@@ -2438,7 +2423,7 @@ p {
 }
 
 .bottom-consultation {
-    background: rgba(255, 242, 214, 0.15);
+    background: #fff;
     border: 1px solid rgba(200, 138, 27, .25);
     border-radius: 24px;
     padding: 35px;
@@ -2470,8 +2455,8 @@ p {
 .consult-left h5 {
     color: var(--primary);
     margin-bottom: 10px;
-    font-family: Georgia, serif;
-    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
 }
 
 .consult-left p {
@@ -2568,19 +2553,46 @@ p {
     }
 
     .service-top .services-title {
-        font-size: 1.45rem;
+        font-size: 18px !important;
     }
 
     .consult-left h5 {
-        font-size: 1.6rem;
+        font-size: 24px !important;
     }
 
     .consult-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 34px;
+        width: 80px !important;
+        height: 80px !important;
+        font-size: 34px !important;
+    }
+
+    .service-icon {
+        width: 40px !important;
+        height: 60px !important;
+        font-size: 24px !important;
+    }
+
+    .consult-btn {
+        font-size: 16px !important;
+    }
+
+    .section-title {
+        font-size: 28px !important;
+    }
+
+    .section-description {
+        font-size: 14px !important;
+    }
+
+    .service-card li {
+        font-size: 14px !important;
+    }
+
+    .service-card p {
+        font-size: 14px !important;
     }
 }
+
 
 @media (max-width:576px) {
     .service-btn {
@@ -2762,7 +2774,7 @@ p {
 }
 
 .jlc-advantage-heading {
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     font-weight: 700;
     color: #14213d;
@@ -2946,12 +2958,12 @@ p {
     }
 
     .jlc-advantage-heading {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
     .jlc-advantage-text {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.75;
     }
 }
@@ -3064,12 +3076,17 @@ p {
 }
 
 .team-section-2-title {
+    font-family: 'Cormorant Garamond', serif;
     margin-top: 20px;
     margin-bottom: 22px;
     color: #14213d;
-    font-size: 64px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
+}
+
+.team-section-2-heading p{
+    font-size: 16px;
 }
 
 .team-section-2-title span {
@@ -3282,6 +3299,10 @@ p {
         font-size: 38px;
     }
 
+    .team-section-2-heading p{
+        font-size: 14px;
+    }
+
     .team-section-2-description {
         font-size: 18px;
         line-height: 1.8;
@@ -3387,7 +3408,7 @@ p {
 
 .cta-section-2-title {
     color: #ffffff;
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 20px;
@@ -3399,8 +3420,9 @@ p {
 }
 
 .cta-section-2-subtitle {
+    font-family: 'Inter', serif !important;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 30px;
 }
@@ -3428,8 +3450,9 @@ p {
     align-items: center;
     gap: 10px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
+    font-family: 'Inter', serif !important;
 }
 
 .cta-section-2-list-item i {
@@ -3444,14 +3467,14 @@ p {
 
 .cta-section-2-description {
     color: rgba(255, 255, 255, .92);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     margin-bottom: 35px;
 }
 
 .cta-section-2-description p {
     color: rgba(255, 255, 255, .92);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     margin-bottom: 35px;
 }
@@ -3614,21 +3637,26 @@ p {
     }
 
     .cta-section-2-title {
-        font-size: 34px;
+        font-size: 28px !important;
     }
 
     .cta-section-2-subtitle {
-        font-size: 18px;
+        font-family: 'Inter', serif !important;
+        font-size: 14px !important;
     }
 
     .cta-section-2-description {
-        font-size: 16px;
+        font-size: 14px !important;
         line-height: 1.9;
     }
 
     .cta-section-2-description p {
-        font-size: 16px;
+        font-size: 14px !important;
         line-height: 1.9;
+    }
+
+    .cta-section-2-list-item {
+        font-size: 14px !important;
     }
 
     .cta-section-2-list {
@@ -3749,8 +3777,8 @@ p {
 
 .faq-header h2 {
     color: #102e56;
-    font-family: Georgia, serif;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.08;
     margin-bottom: 15px;
@@ -3765,7 +3793,7 @@ p {
     max-width: 700px;
     margin: 0 auto;
     color: #526b91;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -3911,7 +3939,7 @@ p {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .faq-section {
         padding: 55px 0 65px;
         background-position: 25% center;
@@ -3927,7 +3955,7 @@ p {
     }
 
     .faq-header h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .faq-header p {
@@ -3961,7 +3989,7 @@ p {
     .faq-wrapper .accordion-body {
         margin: 0 10px 12px;
         padding: 14px 15px;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.7;
     }
 }
@@ -4500,8 +4528,8 @@ p {
 
 .gallery-heading h2 {
     color: var(--primary);
-    font-family: Georgia, serif;
-    font-size: clamp(34px, 4vw, 55px);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.13;
     margin-bottom: 15px;
@@ -4677,6 +4705,10 @@ p {
         gap: 12px;
     }
 
+    .gallery-heading h2 {
+        font-size: 28px;
+    }
+
     .gallery-heading p {
         font-size: 14px;
     }
@@ -4729,8 +4761,8 @@ p {
 .pengacara-perempuan-content > h2 {
     margin: 0 0 24px;
     color: #102544;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(34px, 3.5vw, 54px);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.12;
 }
@@ -4742,7 +4774,7 @@ p {
 .pengacara-perempuan-description {
     margin-bottom: 32px;
     color: #111c33;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.55;
 }
 
@@ -4798,8 +4830,8 @@ p {
 .pengacara-perempuan-card-content h3 {
     margin: 0 0 6px;
     color: #102544;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -4838,7 +4870,7 @@ p {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .pengacara-perempuan-section {
         padding: 42px 0;
         background-position: center top;
@@ -4860,7 +4892,7 @@ p {
 
     .pengacara-perempuan-content > h2 {
         margin-bottom: 18px;
-        font-size: clamp(28px, 8vw, 36px);
+        font-size: 28px;
         line-height: 1.15;
     }
 
@@ -4870,7 +4902,7 @@ p {
 
     .pengacara-perempuan-description {
         margin-bottom: 24px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.6;
     }
 
