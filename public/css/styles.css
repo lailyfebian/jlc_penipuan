@@ -1240,11 +1240,11 @@ p {
         padding: 8px 15px;
     }
 
-    .hero-content h1 {
+    /*.hero-content h1 {
         font-size: 32px !important;
         line-height: 1.15;
         margin-bottom: 20px;
-    }
+    }*/
 
     .hero-content p {
         font-size: 14px;
@@ -1341,7 +1341,6 @@ p {
 }
 
 
-
 .about-section {
     padding: 100px 0;
     background: #fff;
@@ -1399,6 +1398,25 @@ p {
     box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
 }
 
+/*@media (max-width:1199px) {
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-title {
+        font-size: 44px;
+    }
+
+    .about-content {
+        max-height: 155px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+*/
 @media (max-width:991px) {
     .about-section {
         padding: 70px 0;
@@ -1430,11 +1448,11 @@ p {
     }
 
     .about-label {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .about-title {
-        font-size: 28px;
+        font-size: 28px !important;
         line-height: 1.25;
         margin-bottom: 20px;
     }
@@ -1444,7 +1462,7 @@ p {
     }
 
     .about-content p {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -1664,13 +1682,10 @@ p {
 }
 
 .why-section {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-    ), url("../images/background-biru-muda.png");
+    background: #fff;
     position: relative;
+    margin-top: 70px;
     padding-top:  50px;
-    padding-bottom: 50px;
 }
 
 .section-heading {
@@ -1690,11 +1705,17 @@ p {
 
 .section-heading h3 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 52px;
+    font-size: 46px;
     color: #132645;
     line-height: 1.15;
     font-weight: 700;
 }
+
+.section-heading p {
+    line-height: 1.9;
+    font-size: 16px;
+}
+
 
 .why-item {
     display: flex;
@@ -1703,8 +1724,6 @@ p {
     height: 100%;
     position: relative;
     margin-top: 30px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 10%;
 }
 
 .why-item::after {
@@ -1743,8 +1762,8 @@ p {
 
 .why-content .why-title {
     font-family: "Cormorant Garamond", serif;
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 24px !important;
+    font-weight: 700;
     line-height: 1.2;
     color: #132645;
     margin-bottom: 15px;
@@ -1778,13 +1797,17 @@ p {
     }
 }
 
-@media(max-width:576px) {
+@media(max-width:767px) {
     .section-heading {
         margin-bottom: 50px;
     }
 
     .section-heading h3 {
-        font-size: 34px;
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
     }
 
     .why-item {
@@ -1800,11 +1823,11 @@ p {
     }
 
     .why-content .why-title {
-        font-size: 28px;
+        font-size: 18px !important;
     }
 
     .why-content p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -1996,6 +2019,10 @@ p {
     .choose-feature-list {
         gap: 24px;
         margin-top: 25px;
+    }
+
+    .choose-feature-list p {
+        font-size: 14px !important;
     }
 
     .choose-feature-card {
@@ -2669,6 +2696,7 @@ p {
 .jlc-advantage-body {
     position: relative;
     padding: 70px 60px;
+    font-size: 16px;
 }
 
 .jlc-advantage-header {
@@ -2776,7 +2804,7 @@ p {
 .jlc-advantage-heading {
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     color: #14213d;
     line-height: 1.35;
     margin-bottom: 12px;
@@ -2919,11 +2947,12 @@ p {
     }
 
     .jlc-advantage-title {
-        font-size: 30px;
+        font-size: 28px !important;
     }
 
     .jlc-advantage-subtitle {
         justify-content: center;
+        font-size: 11px;
     }
 
     .jlc-advantage-column {
@@ -2981,9 +3010,9 @@ p {
         padding: 28px 18px;
     }
 
-    .jlc-advantage-title {
+    /*.jlc-advantage-title {
         font-size: 26px;
-    }
+    }*/
 
     .jlc-advantage-subtitle {
         font-size: 12px;
@@ -3076,17 +3105,12 @@ p {
 }
 
 .team-section-2-title {
-    font-family: 'Cormorant Garamond', serif;
     margin-top: 20px;
     margin-bottom: 22px;
     color: #14213d;
     font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
-}
-
-.team-section-2-heading p{
-    font-size: 16px;
 }
 
 .team-section-2-title span {
@@ -3097,7 +3121,7 @@ p {
     max-width: 850px;
     margin: 0 auto;
     color: #4d596a;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -3286,7 +3310,7 @@ p {
     }
 
     .team-section-2-subtitle {
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 2px;
     }
 
@@ -3296,15 +3320,15 @@ p {
     }
 
     .team-section-2-title {
-        font-size: 38px;
+        font-size: 28px !important;
     }
 
-    .team-section-2-heading p{
-        font-size: 14px;
+    .team-section-2-title span {
+        font-size: 28px !important;
     }
 
     .team-section-2-description {
-        font-size: 18px;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -3330,10 +3354,10 @@ p {
         font-size: 32px;
     }
 
-    .team-section-2-description {
+    /*.team-section-2-description {
         font-size: 16px;
     }
-
+*/
     .team-section-2-content .team-name {
         font-size: 19px;
     }
@@ -3356,8 +3380,6 @@ p {
     position: relative;
     overflow: hidden;
     background: #f8f9fc;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .cta-section-2-wrapper {
@@ -3420,7 +3442,6 @@ p {
 }
 
 .cta-section-2-subtitle {
-    font-family: 'Inter', serif !important;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.7;
@@ -3452,7 +3473,6 @@ p {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Inter', serif !important;
 }
 
 .cta-section-2-list-item i {
@@ -3467,14 +3487,14 @@ p {
 
 .cta-section-2-description {
     color: rgba(255, 255, 255, .92);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
     margin-bottom: 35px;
 }
 
 .cta-section-2-description p {
     color: rgba(255, 255, 255, .92);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
     margin-bottom: 35px;
 }
@@ -3582,7 +3602,6 @@ p {
 @media(max-width:991.98px) {
     .cta-section-2 {
         padding: 40px 0;
-        margin-bottom: -50px;
     }
 
     .cta-section-2-left,
@@ -3626,8 +3645,6 @@ p {
 @media(max-width:767.98px) {
     .cta-section-2 {
         padding: 30px 0;
-        margin-top: -30px;
-        margin-bottom: 40px;
     }
 
     .cta-section-2-left,
@@ -3641,7 +3658,6 @@ p {
     }
 
     .cta-section-2-subtitle {
-        font-family: 'Inter', serif !important;
         font-size: 14px !important;
     }
 
@@ -3655,10 +3671,6 @@ p {
         line-height: 1.9;
     }
 
-    .cta-section-2-list-item {
-        font-size: 14px !important;
-    }
-
     .cta-section-2-list {
         flex-direction: column;
         gap: 15px;
@@ -3668,6 +3680,10 @@ p {
     .cta-section-2-button {
         width: 100%;
         justify-content: center;
+    }
+
+    .cta-section-2-list-item {
+        font-size: 14px;
     }
 }
 
@@ -3687,15 +3703,15 @@ p {
     }
 
     .cta-section-2-subtitle {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .cta-section-2-description {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .cta-section-2-description p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -4920,6 +4936,13 @@ p {
         border-radius: 12px;
     }
 
+    .pengacara-perempuan-icon img {
+        display: block;
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
     .pengacara-perempuan-divider {
         display: none;
     }
@@ -5001,7 +5024,7 @@ p {
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
     color: #102544 !important;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; display: block;
     color: #c58a20;
@@ -5010,7 +5033,7 @@ p {
 .list-kota-header h2 span{
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; 
     display: block;
@@ -5023,7 +5046,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0 auto 12px;
     color: #727272;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.8;
 }
@@ -5067,7 +5090,7 @@ p {
     border: 1px solid #E9EDF3;
     border-radius: 8px;
     color: #102544 !important;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 500;
     line-height: 1.5;
     text-decoration: none !important;
@@ -5127,7 +5150,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0;
     color: #526176;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.7;
     text-align: center;
@@ -5182,7 +5205,7 @@ p {
 
     .list-kota-header h2 {
         font-family: 'Georgia', serif !important;
-        font-size: 27px !important;
+        font-size: 28px !important;
         line-height: 1.4;
         margin-bottom: 12px;
     }
@@ -5265,7 +5288,6 @@ p {
         font-size: 10px !important;
     }
 }
-
 
 /* Section button WA */
 .button-wa {
