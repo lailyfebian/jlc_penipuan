@@ -2046,7 +2046,7 @@ p {
     }
 
     .choose-feature-card .why-title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .choose-feature-card .why-content p:not(.why-title) {
