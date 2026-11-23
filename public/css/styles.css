@@ -3497,7 +3497,7 @@ p {
 
 .cta-section-2-description p {
     color: rgba(255, 255, 255, .92);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     margin-bottom: 35px;
 }
@@ -3716,6 +3716,27 @@ p {
     .cta-section-2-description p {
         font-size: 14px;
     }
+}
+
+.jlc-cta-button-center {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto 0;
+    padding: 18px 30px;
+
+    background: linear-gradient(135deg, #e1b04d, #c7922d);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 14px;
+
+    position: relative;
+    overflow: hidden;
+    transition: .35s ease;
 }
 
 .jlc-cta-button-center:hover {
